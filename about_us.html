@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bootstrap project"/>
+    <meta name="keywords" content="html,web,bootstrap,project"/>
+    <meta name="author" content="Elie"/>
+    <title>About Us</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+            <a href="index.html" class="navbar-brand"><img src="media/film_strip.png" alt="pic" height="48">True Movies</a>
+            <button type="button" class="navbar-toggler" data-target="#navbar-collapsible" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbar-collapsible" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="realhistory.html" class="nav-link">Real History</a></li>
+                <li class="nav-item"><a href="movies.html" class="nav-link">Movies</a></li>
+                <li class="nav-item"><a href="about_us.html" class="nav-link active">About Us</a></li>
+            </ul>
+        </div>
+        </nav>
+
+    <div class="container-fluid bg-light">
+        <div style="padding-top: 15px"><p class="text-justify">This website is a university project for the Web Developement 
+                course given at the Lebanese Canadian 
+                University. The course aims to teach the very basics of web design and code in order to build the core foundations for later courses 
+                to come. This site was published for educational purposes only. </p>
+            </div>
+                           
+            <h2 class="text-center">This site was created using</h2>
+            <div class="container mb-4">
+                    <div class="card-group">
+                    <div class="card">
+                        <div class="card-header bg-dark text-light">HTML</div>
+                    <div class="card-body">Hypertext Markup Language (HTML) is the standard markup language for creating web pages and
+                         web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies
+                          for the World Wide Web. Web browsers receive HTML documents from a web server or from 
+                          local storage and render the documents into multimedia web pages. 
+                          HTML describes the structure of a web page semantically and originally included cues for the appearance
+                           of the document.</div>
+                     <div class="card-footer bg-dark text-light">
+                         <a href="https://en.wikipedia.org/wiki/HTML" class="card-link btn btn-light">Learn More</a>
+                        </div>
+                     </div>
+                     <div class="card">
+                         <div class="card-header bg-dark text-light">CSS</div>
+                     <div class="card-body">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a 
+                         document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, 
+                         alongside HTML and JavaScript. CSS is designed to enable the separation of presentation and content, 
+                         including layout, colors, and fonts. This separation can improve content accessibility, provide more 
+                         flexibility and control in the specification of presentation characteristics, enable multiple web pages 
+                         to share formatting by specifying the relevant CSS in a separate .css file,
+                          and reduce complexity and repetition in the structural content.</div>
+                      <div class="card-footer bg-dark text-light">
+                          <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" class="card-link btn btn-light">Learn More</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                         <div class="card-header bg-dark text-light">Bootstrap</div>
+                     <div class="card-body">Bootstrap is a free and open-source CSS framework directed at responsive, 
+                         mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for 
+                         typography, forms, buttons, navigation and other interface components. Bootstrap is the third-most-starred project
+                          on GitHub, with more than 131,000 stars, behind only freeCodeCamp (almost 300,000 stars) and marginally 
+                          behind Vue.js framework. According to Alexa Rank, Bootstrap getbootstrap.com is in the top-2000 in 
+                          US while vuejs.org is in top-7000 in US.</div>
+                      <div class="card-footer bg-dark text-light">
+                          <a href="https://getbootstrap.com/" class="card-link btn btn-light">Learn More</a>
+                    </div>
+                      </div>
+                     </div>
+                 </div>
+
+
+                 <h2 class="text-center mb-4">Contact Us!</h2>
+
+                                <form>
+                                        <div class="form-row"> 
+                                        <div class="form-group col-sm-6">
+                                        <label for="Name">Name:</label>
+                                        <input id="Name" type="text" class="form-control" required>
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <label for="email">Email:</label>
+                                        <input id="email" type="email" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row"> 
+                                            <div class="form-group col-sm-6">
+                                        <p>Gender:</p>
+                                        <div class="form-check form-check-inline">
+                                        <input id="rbMale" type="radio" name="gender" class="form-check-input" checked>
+                                        <label for="rbMale" class="form-check-label">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                        <input id="rbFemale" type="radio" name="gender" class="form-check-input">
+                                        <label for="rbFemale" class="form-check-label">Female</label>
+                                    </div>
+                                    </div>
+                                    
+                                     
+                                            <div class="form-group col-sm-6">
+                                            <p>Type of Feedback</p>
+                                            <div class="form-check form-check-inline">
+                                                    <input id="chkerr" type="checkbox" class="form-check-input">
+                                                    <label for="chkerr" class="form-check-label">Error</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                            <input id="chkinq" type="checkbox" class="form-check-input">
+                                                            <label for="chkinq" class="form-check-label">Inquiry</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                    <input id="chksug" type="checkbox" class="form-check-input">
+                                                                    <label for="chksug" class="form-check-label">Suggestion</label>
+                                               </div> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <p>Give us your feedback:  </p>
+                                    <textarea rows="8" class="col-sm-12" required></textarea>
+                               
+                                </div>
+                                    <div class="text-center">
+                                    <button class="btn btn-success">Submit</button>
+                                    <button type="reset" class="btn btn-danger">Reset</button>
+                                </div>
+                                
+                                   </form>
+
+
+                                <p style="text-align: right; padding-right: 80px; font-weight: bold" class="text-dark">Join Us</p>
+                                <nav style="text-align: right; padding-right: 20px; padding-bottom: 20px"><a href="https://www.facebook.com/LCUuniversity" target="_blank" title="Facebook"><img src="media/Facebook.png" alt="facebook"  height ="50" width="50"></a>
+                                    <a href="https://twitter.com/lcuuniversity" target="_blank" title="Twitter"><img src="media/twitter.png" alt="twitter"  height ="50" width="50"></a>
+                                    <a href="https://instagram.com/lcuuniversity/" target="_blank" title="Instagram"><img src="media/instagram.png" alt="instagram"  height ="50" width="50"></a>
+                                </nav>
+    </div>
+</body>
+</html>

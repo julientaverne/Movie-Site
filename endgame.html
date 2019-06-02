@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies: Endgame</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="endgame.css">
+</head>
+<body>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!--The Navigation Bar-->
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+        <a href="index.html" class="navbar-brand"><img src="media/film_strip.png" alt="pic" height="48">True Movies</a>
+        <button type="button" class="navbar-toggler" data-target="#navbar-collapsible" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+        <div id="navbar-collapsible" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="realhistory.html" class="nav-link">Real History</a></li>
+            <li class="nav-item"><a href="movies.html" class="nav-link">Movies</a></li>
+            <li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
+        </ul>
+    </div>
+    </nav>
+
+        <!--The Title, Details, and Main-Image division-->
+        <!--The position-details class is used to add a margin for positioning-->
+    <div class="container position-details">
+        <div class="row">
+            <!--The details class is used for the title, details, and image css-->
+            <div class="col-md-6 details">
+                <h1>Avengers: Endgame</h1>
+                <p>After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. 
+                    With the help of remaining allies, the Avengers assemble once more in order to undo Thanos' 
+                    actions and restore order to the universe.</p>
+                <p>Cast:</p>
+                <!--The cast class is used for the image css-->
+                <div class="cast">
+                    <img src="media/robert_downey_jr.jpg" alt="RD_jr" title="Robert Downey Jr.">
+                    <img src="media/chris_evans.jpg" alt="Evans" title="Chris Evans">
+                    <img src="media/chris_hemsworth.jpg" alt="Hemsworth" title="Chris Hemsworth">
+                    <img src="media/scarlett_johansson.jpg" alt="Johansson" title="Scarlett Johansson"> 
+                </div>
+                <!--Used the font awesome icons-->
+                <a href="#"><i class="fa fa-play"></i> Watch Now</a>
+                <a href="#" id="download-btn"><i class="fa fa-arrow-down"></i> Download</a>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="media/endgame_poster.jpg" alt="Endgame" title="Endgame" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--The bottom image-row division-->
+    <div class="container series">
+        <h3>Related Movies</h3>
+        <!--Everything is divided into 4 columns at medium breaking point (3 divisions)-->
+        <div class="row">
+            <div class="col-md-4">
+                <!--Each division is then dvivided again into 2 inside a row, to put the images all next to each other-->
+                    <div class="row">
+                    <div class="col-6">
+                    <img src="media/infinity_war.jpg" alt="Infinity War" title="Infinity War">
+                    </div>
+                    <div class="col-6">
+                    <img src="media/ultron.jpg" alt="Ultron"  title="Age of Ultron">
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                    <img src="media/avengers.jpg" alt="Avengers" title="Avengers">
+                    </div>
+                    <div class="col-6">
+                    <img src="media/captain_america.jpg" alt="cap_america" title="Civil War">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-6">
+                    <img src="media/ironman.jpg" alt="ironman" title="Ironman">
+                    </div>
+                    <div class="col-6">
+                    <img src="media/thor.jpg" alt="thor" title="Ragnarok">
+                    </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

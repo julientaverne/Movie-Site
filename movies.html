@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Bootstrap project"/>
+    <meta name="keywords" content="html,web,bootstrap,project"/>
+    <meta name="author" content="Elie"/>
+    <title>Movies</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!--The Navigation Bar-->
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+      <a href="index.html" class="navbar-brand"><img src="media/film_strip.png" alt="pic" height="48">True Movies</a>
+      <button type="button" class="navbar-toggler" data-target="#navbar-collapsible" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+      <div id="navbar-collapsible" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="realhistory.html" class="nav-link">Real History</a></li>
+          <li class="nav-item"><a href="movies.html" class="nav-link active">Movies</a></li>
+          <li class="nav-item"><a href="about_us.html" class="nav-link">About Us</a></li>
+      </ul>
+  </div>
+  </nav>
+
+        <div class="bg-top">
+        <div class="container">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="media/movie_carousel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/movie_carousel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="media/movie_carousel3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h1>Dunkirk</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+        </div>
+    </div>
+
+    <!--Added another navigation bar for searching movies-->
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-dark bg-top pt-3">
+            <div class="container">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Action</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Comedy</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Animation</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Thriller</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sci-Fi</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sport</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 pr-5">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+
+
+<!--Used for background image-->
+<div class="main">
+
+        <div class="container series pt-3">
+                <h3>Featured</h3>
+                <hr>
+                <!--Everything is divided into 4 columns at medium breaking point (3 divisions)-->
+                <div class="row">
+                    <div class="col-md-4">
+                        <!--Each division is then dvivided again into 2 inside a row, to put the images all next to each other-->
+                            <div class="row">
+                            <div class="col-6">
+                            <a href="endgame.html"><img src="media/endgame_poster.jpg" alt="Infinity War" title="Infinity War"></a>
+                            </div>
+                            <div class="col-6">
+                            <img src="media/robin_poster.jpg" alt="robin_poster"  title="Robin Hood">
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-6">
+                            <img src="media/aqua_poster.jpg" alt="Aquaman" title="Aquaman">
+                            </div>
+                            <div class="col-6">
+                            <img src="media/blood_poster.jpg" alt="blood" title="Blood Diamond">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-6">
+                            <img src="media/warrior_poster.jpg" alt="warrior_poster" title="Warrior">
+                            </div>
+                            <div class="col-6">
+                            <img src="media/fury_poster.jpg" alt="fury_poster" title="Fury">
+                            </div>
+                    </div>
+                </div>
+                </div>
+        
+            </div>
+
+
+            <div class="container series mt-3">
+                    <h3>Best Rated</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-4">
+                                <div class="row">
+                                <div class="col-6">
+                                <img src="media/split_poster.jpg" alt="split_poster" title="split_poster">
+                                </div>
+                                <div class="col-6">
+                                <img src="media/heat_poster.jpg" alt="heat_poster"  title="Heat">
+                                </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-6">
+                                <img src="media/hercules_poster.jpg" alt="hercules_poster" title="Hercules">
+                                </div>
+                                <div class="col-6">
+                                <img src="media/koh.jpg" alt="koh" title="Kingdom of Heaven">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-6">
+                                <img src="media/pain_poster.jpg" alt="pain_poster" title="Pain and Gain">
+                                </div>
+                                <div class="col-6">
+                                <img src="media/Pirates_poster.png" alt="Pirates_poster" title="Curse of the Black Pearl">
+                                </div>
+                                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="container series mt-3">
+                        <h3>Most Popular</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-4">
+                                    <div class="row">
+                                    <div class="col-6">
+                                    <img src="media/braven_poster.jpg" alt="braven_poster" title="Braven">
+                                    </div>
+                                    <div class="col-6">
+                                    <img src="media/infinity_war.jpg" alt="infinity_war"  title="Infinity War">
+                                    </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                    <img src="media/xmen_poster.jpg" alt="xmen_poster" title="X-Men Apocalypse">
+                                    </div>
+                                    <div class="col-6">
+                                    <img src="media/batman_poster.jpg" alt="Dark Knight"  title="The Dark Knight Rises">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                    <img src="media/ironman.jpg" alt="ironman" title="Ironman">
+                                    </div>
+                                    <div class="col-6">
+                                    <img src="media/venom_poster.jpg" alt="venom_poster" title="Venom">
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                
+                    </div>
+
+                    <nav>
+
+                      <!--Pagination at the botton to go throughthe pages-->
+                            <ul class="pagination justify-content-center pb-4 mb-0">
+                            <li class="page-item disabled">
+                            <a class="page-link"  aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link">1</a></li>
+                            <li class="page-item"><a class="page-link text-primary">2</a></li>
+                            <li class="page-item"><a class="page-link text-primary">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link text-primary"  aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            </a>
+                            </li>
+                            </ul>
+                          </nav>
+                </div>
+                </body>
+                </html>
